@@ -11,7 +11,7 @@
     <h1>Blog Details</h1>
     <h3 th:text="${post.title}" ></h3>
     <p th:text="${post.full_text}"></p>
-    <!--<p th:text="${post.views}"></p> -->
+    <p> <b>Views:</b> <span th:text="${post.views}"> </span></p>
     <a th:href="'/blog/'+${post.id}+'/edit'">Edit...</a> <br/>
    <form th:action="'/blog/'+${post.id}+'/delete'" method="post">
         <button type="submit" class="btn btn-warning">Delete</button>

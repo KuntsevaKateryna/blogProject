@@ -12,7 +12,7 @@ public class Post {
     private Long id;
 
     private String title, annons, full_text;
-    private int views;
+    private Integer views;
 
     public Post() {
     }
@@ -21,9 +21,10 @@ public class Post {
         this.title = title;
         this.annons = annons;
         this.full_text = full_text;
+        this.views = new Integer(0);
     }
 
-        public Long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -53,5 +54,13 @@ public class Post {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public void setViews (Integer view) {
+        this.views = view;
+    }
+
+    public Integer getViews () {
+        return views;
     }
 }

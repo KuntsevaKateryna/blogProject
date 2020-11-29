@@ -71,6 +71,7 @@ public class BlogController {
                                     @RequestParam String full_text,
                                     Model model) {
         Post post = null;
+        String redirectPage = "redirect:/blog10";
         try {
             post = postRepository.findById(id).orElseThrow(
                     () -> new Exception("Blog not found - " + title));
@@ -79,23 +80,30 @@ public class BlogController {
             post.setFull_text(full_text);
             postRepository.save(post);
         } catch (Exception e) {
-            e.printStackTrace();
+            model.addAttribute("error", e.toString());
+            redirectPage = "errorPage";
         }
-        return "redirect:/blog10";
+        return redirectPage;
     }
 
     @PostMapping("/blog/{id}/delete")
     public String postUpdateblog (  @PathVariable(value = "id") long id,
                                     Model model) {
         Post post = null;
+        String redirectPage = "redirect:/blog10";
         try {
             post = postRepository.findById(id).orElseThrow(
                     () -> new Exception("Blog not found"));
 
             postRepository.delete(post);
+
         } catch (Exception e) {
-            e.printStackTrace();
+            model.addAttribute("error", e.toString());
+            redirectPage = "errorPage";
+            //e.printStackTrace();
         }
-        return "redirect:/blog10";
+
+
+        return redirectPage;
     }
 }
