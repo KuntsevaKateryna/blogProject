@@ -102,8 +102,6 @@ public class BlogController {
             redirectPage = "errorPage";
             //e.printStackTrace();
         }
-
-
         return redirectPage;
     }
 }
