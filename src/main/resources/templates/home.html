@@ -3,172 +3,200 @@
 <head>
     <title th:text="${title}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/styles.css" th:href="@{/css/styles.css}" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
 </head>
 <body>
 <header th:insert="blocks/header :: header"></header>
 
 <p th:text="'Hello, ' + ${title} + '!'" />
 
-<main role="main">
 
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1>Album example</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-            <p>
-                <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
-        </div>
-    </section>
+<!-- main container -->
+<div class="wrapper">
+    <aside class="asidebar">
+        <img class="my_photo" src="../static/images/me.jpg" th:src="@{/images/me.jpg}" alt="My photo" />
 
-    <div class="album py-5 bg-light">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!--Contacts container-->
+        <div class="aside_containers">
+            <h3 class="aside_containers_title">Contacts</h3>
+            <div>
+            <span class="contacts_link_CE">C:</span
+            ><a class="contacts_link" href="tel:+380505796332">
+                +38 050 57 96 332</a
+            >
+            </div>
+            <div>
+                <span class="contacts_link_CE">E:</span>
+                <a class="contacts_link" href="mailto:k.kuntseva@gmail.com">
+                    k.kuntseva@gmail.com</a
+                >
             </div>
         </div>
-    </div>
 
-</main>
+        <!--Tech Skills container-->
+        <div class="aside_containers">
+            <h3 class="aside_containers_title">Tech Skills</h3>
+            <ul>
+                <li class="li_aside"><span class="li_aside_text">Java SE</span></li>
+                <li class="li_aside"><span class="li_aside_text">Java EE</span></li>
+                <li class="li_aside"><span class="li_aside_text">MS SQL</span></li>
+                <li class="li_aside">
+                    <span class="li_aside_text">Oracle SQL</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--Soft Skills container-->
+        <div class="aside_containers">
+            <h3 class="aside_containers_title">Soft Skills</h3>
+            <ul>
+                <li class="li_aside">
+                    <span class="li_aside_text">English, intermediate level</span>
+                </li>
+                <li class="li_aside">
+                    <span class="li_aside_text">Emotional intelligence</span>
+                </li>
+                <li class="li_aside">
+                    <span class="li_aside_text">Teamwork</span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- about me container -->
+    <div class="about_me_container">
+        <!--about me main info-->
+        <div class="about_me_general">
+            <h2 class="profession">PhD in Economy, Java Developer</h2>
+            <h1 class="name">Kuntseva Kateryna</h1>
+            <p class="description">
+                I am a mom of two children. I am training my brain after 4 years
+                of maternity leave.
+            </p>
+        </div>
+
+        <!-- projects container -->
+        <div class="main_containers">
+            <h3 class="main_container_titles">Projects</h3>
+            <ol>
+                <li class="li_project">
+                    <a
+                            class="projects_link_and_tech_name"
+                            href="https://en.wikipedia.org/wiki/Informatics"
+                    >Informatics
+                    </a>
+                    <span class="dots"> ............................ </span>
+                    <span>
+                <b>[</b>
+                <span class="projects_link_and_tech_name">Ms Office</span>
+                <b>]</b>
+              </span>
+                </li>
+
+                <li class="li_project">
+                    <a
+                            class="projects_link_and_tech_name"
+                            href="https://en.wikipedia.org/wiki/Relational_database"
+                    >Relational databases
+                    </a>
+                    <span class="dots">............</span>
+                    <span
+                    ><b>[</b><span class="projects_link_and_tech_name">MS SQL</span
+                    ><b>]</b></span
+                    >
+                </li>
+                <li class="li_project">
+                    <a
+                            class="projects_link_and_tech_name"
+                            href="https://www.vodafone.ua/uk"
+                    >Vodafone
+                    </a>
+                    <span class="dots">...............................</span>
+                    <span
+                    ><b>[</b
+                    ><span class="projects_link_and_tech_name"
+                    >Oracle SQL, Java EE</span
+                    ><b>]</b></span
+                    >
+                </li>
+            </ol>
+        </div>
+
+        <!--work experience container-->
+        <div class="main_containers">
+            <h3 class="main_container_titles">Work experience</h3>
+
+            <!--company 1-->
+            <div>
+                <h4 class="main_container_subtitles">
+                    A mom of two children
+                    <span class="main_container_subtitles_desc">At home </span>
+                </h4>
+                <span class="date_loc_param"> June 2016 - up to now</span>
+                <span class="slash">|</span>
+                <span class="date_loc_param">Ukraine</span>
+                <ul class="lu_main_container">
+                    <li>to develop children</li>
+                    <li>house cleaning</li>
+                    <li>cooking</li>
+                </ul>
+            </div>
+
+            <!--company 2-->
+            <div>
+                <h4 class="main_container_subtitles">
+                    Java Developer
+                    <span class="main_container_subtitles_desc"> Netcracker</span>
+                </h4>
+                <span class="date_loc_param">July 2015 - April 2016</span>
+                <span class="slash">|</span>
+                <span class="date_loc_param">Ukraine</span>
+                <ul class="lu_main_container">
+                    <li>
+                        a member of Technical Solution Support Team in Vodafone Project
+                    </li>
+                    <li>corporate newspaper support</li>
+                </ul>
+            </div>
+
+            <!--company 3-->
+            <div>
+                <h4 class="main_container_subtitles">
+                    Lecturer of Economic Cybernetics Department
+                    <span class="main_container_subtitles_desc">
+                Ukrainian Academy of Banking</span
+                    >
+                </h4>
+                <span class="date_loc_param"> September 2008 - June 2015 </span>
+                <span class="slash">|</span>
+                <span class="date_loc_param">Ukraine</span>
+                <ul class="lu_main_container">
+                    <li>lecturer</li>
+                    <li>curator</li>
+                    <li>member of the Young Scientists Board</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Education-->
+        <div class="main_containers">
+            <h3 class="main_container_titles">Education</h3>
+            <h4 class="main_container_subtitles_desc">
+                Ukrainian Academy of Banking
+            </h4>
+            <h5 class="faculty">Economic Cybernatics</h5>
+            <span class="date_loc_param"> September 2003 - July 2008 </span>
+            <span class="slash">|</span>
+            <span class="date_loc_param">Ukraine</span>
+        </div>
+    </div>
+</div>
+
 
 <div th:insert="blocks/footer :: footer"></div>
 </body>

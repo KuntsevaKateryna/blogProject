@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa;
+  padding: 20px;
+  font-family: Montserrat;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.asidebar {
+  background-color: #1e2939;
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about_me_container {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 110px;
+  padding-top: 110px;
+}
+
+.my_photo {
+  width: 370px;
+}
+
+.aside_containers {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.aside_containers_title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts_link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contacts_link_CE {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+.li_aside {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+  color: #e3630e;
+}
+
+.li_aside_text {
+  color: #ffffff;
+}
+
+.profession {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+
+.name {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+  /*width: 413px;*/
+}
+
+.about_me_general {
+  margin-bottom: 65px;
+}
+
+.main_container_titles {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.projects_link_and_tech_name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+}
+.dots {
+  color: #a8a8a8;
+}
+
+.li_project {
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.main_containers {
+  margin-bottom: 55px;
+}
+.main_container_subtitles {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.main_container_subtitles_desc {
+  color: #ff6b08;
+  margin-bottom: 10px;
+}
+
+.date_loc_param {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  /*margin-bottom: 14px;*/
+}
+
+.slash {
+  color: #030101;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.faculty {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.lu_main_container {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-top: 14px;
+}
