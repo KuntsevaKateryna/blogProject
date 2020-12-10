@@ -80,7 +80,8 @@ public class BlogController {
             post.setFull_text(full_text);
             postRepository.save(post);
         } catch (Exception e) {
-            model.addAttribute("error", e.toString());
+            model.addAttribute("error", e.getClass().toString());
+            model.addAttribute("message", e.getMessage());
             redirectPage = "errorPage";
         }
         return redirectPage;
@@ -98,7 +99,8 @@ public class BlogController {
             postRepository.delete(post);
 
         } catch (Exception e) {
-            model.addAttribute("error", e.toString());
+            model.addAttribute("error", e.getClass().toString());
+            model.addAttribute("message", e.getMessage());
             redirectPage = "errorPage";
             //e.printStackTrace();
         }
