@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Login page</title>
+    <title>My Login page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -10,6 +10,18 @@
 <header th:insert="blocks/header :: header"></header>
 <div>
     <h1>Login page</h1>
+    <div class="container mt-5 mb-5">
+        <form method="post">
+            <input type="text" name="login"  placeholder="Enter Your Login" class="form-control"> <br>
+            <input type="text" name="password"  placeholder="Enter Your Password" class="form-control"> <br>
+            <button type="submit" class="btn btn-success">Ok</button>
+        </form>
+
+        <div>
+            <p th:text="${message}"> </p>
+        </div>
+
+    </div>
 
 </div>
 
