@@ -102,7 +102,6 @@ public class BlogController {
             model.addAttribute("error", e.getClass().toString());
             model.addAttribute("message", e.getMessage());
             redirectPage = "errorPage";
-            //e.printStackTrace();
         }
         return redirectPage;
     }

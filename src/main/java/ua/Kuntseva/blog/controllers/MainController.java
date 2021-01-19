@@ -9,13 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ua.Kuntseva.blog.models.Users;
-import ua.Kuntseva.blog.repo.PostRepository;
 import ua.Kuntseva.blog.repo.UsersRepository;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-//import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
@@ -27,17 +25,12 @@ public class MainController {
 
     @GetMapping("/home") //обработка главной страницы
     public String home(Model model) {
-        //write "Main page" into title variable
-        //model.addAttribute("title", "Main page");
         model.addAttribute("title","Main page");
         return "home";
     }
 
     @GetMapping("/")
     public String loginProcess(Model model) {
-        //write "Main page" into title variable
-        //model.addAttribute("title", "Main page");
-        //model.addAttribute("title","Login page");
         return "loginPage";
     }
 
@@ -80,19 +73,5 @@ public class MainController {
         model.addAttribute("title","About me page");
         return "about";
     }
-
-   /* @GetMapping("/e")
-    public String testErrorProcess(Model model) {
-        Users u = new Users();
-        try {
-           // u.getPassword();
-            Integer i = new Integer (u.toString());
-        }
-        catch (Exception e) {
-            model.addAttribute("error", e.getClass().toString());
-            model.addAttribute("message", e.getMessage());
-        }
-        return "errorPage";
-    }*/
 
 }
